@@ -1,0 +1,17 @@
+@mixin lato-400 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@mixin lato-700 {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@mixin lato-900 {
+  font-family: "Lato", serif;
+  font-style: normal;
+  font-weight: 700;
+}

@@ -1,0 +1,44 @@
+.footer {
+  width: 100%;
+  background-color: #245852;
+  padding: 9.5rem 0 14.4rem 0;
+
+  &__wraper {
+    width: 80%;
+    margin: auto;
+
+    &-title {
+      @include lato-900;
+      font-size: 4rem;
+      color: $text-white;
+      margin-bottom: 6.7rem;
+      text-align: center;
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      a {
+        @include lato-400;
+        font-size: 2.5rem;
+        color: $text-white;
+        text-decoration: none;
+
+        &:not(:last-child) {
+          margin-bottom: 5rem;
+        }
+
+        &:nth-child(2) {
+          align-self: center;
+        }
+
+        &:nth-child(3) {
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+}

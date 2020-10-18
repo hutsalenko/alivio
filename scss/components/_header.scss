@@ -1,0 +1,232 @@
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 17rem;
+
+  @media (max-width: 1000px) {
+    margin-bottom: 14rem;
+  }
+
+  @media (max-width: 580px) {
+    margin-bottom: 10rem;
+  }
+
+  &__menu {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+
+    @media (max-width: 700px) {
+      flex-direction: column;
+    }
+
+    &-logo {
+      margin-right: 4rem;
+
+      @media (max-width: 700px) {
+        margin-bottom: 3rem;
+        margin-right: 0;
+      }
+    }
+
+    &-nav {
+      @media (max-width: 700px) {
+        margin-bottom: 3rem;
+      }
+
+      @media (max-width: 405px) {
+        text-align: center;
+      }
+
+      a {
+        @include lato-400;
+        font-weight: 500;
+        font-size: 2rem;
+        color: $text-dark;
+        text-decoration: none;
+
+        @media (max-width: 1203px) {
+          font-size: 1.5rem;
+        }
+
+        &:not(:last-child) {
+          margin-right: 5.2rem;
+
+          @media (max-width: 1203px) {
+            margin-right: 4rem;
+          }
+
+          @media (max-width: 700px) {
+            margin-right: 2rem;
+          }
+        }
+      }
+    }
+
+    &-auth {
+      display: flex;
+
+      @media (max-width: 320px) {
+        flex-direction: column;
+      }
+
+      &-sign {
+        @include lato-400;
+        font-size: 2rem;
+        color: $text-dark;
+        border-radius: 6%;
+        outline: none;
+        width: 16.3rem;
+        height: 5rem;
+        background-color: transparent;
+        border: 1px solid #fff;
+        margin-right: 1rem;
+
+        @media (max-width: 1203px) {
+          font-size: 1.5rem;
+        }
+
+        @media (max-width: 405px) {
+          width: 13rem;
+          height: 4rem;
+        }
+
+        &:hover {
+          box-shadow: 0 0 4px 4px rgb(219, 219, 219);
+        }
+
+        &:active {
+          box-shadow: 0 0 7px 7px rgb(219, 219, 219);
+        }
+      }
+
+      &-trial {
+        @include lato-400;
+        font-size: 2rem;
+        color: $text-white;
+        background-color: $button-color;
+        border-radius: 6%;
+        outline: none;
+        width: 16.3rem;
+        height: 5rem;
+        border: 1px solid $button-color;
+
+        @media (max-width: 1203px) {
+          font-size: 1.5rem;
+        }
+
+        @media (max-width: 405px) {
+          width: 13rem;
+          height: 4rem;
+        }
+
+        &:hover {
+          box-shadow: 0 0 4px 4px $button-color;
+        }
+
+        &:active {
+          box-shadow: 0 0 7px 7px $button-color;
+        }
+      }
+    }
+  }
+
+  &__preview {
+    width: 100%;
+    height: 930px;
+    background: url(../../img/BG.png) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 1440px) {
+      height: 676px;
+    }
+
+    @media (max-width: 1000px) {
+      height: 469px;
+    }
+
+    @media (max-width: 580px) {
+      height: 272px;
+    }
+
+    &-wraper {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      &-title {
+        @include lato-700;
+        font-size: 6.5rem;
+        color: $text-color;
+        margin-bottom: 3rem;
+
+        @media (max-width: 1440px) {
+          font-size: 5.5rem;
+          margin-bottom: 2rem;
+        }
+
+        @media (max-width: 1000px) {
+          font-size: 4rem;
+          margin-bottom: 2.5rem;
+        }
+
+        @media (max-width: 580px) {
+          font-size: 3rem;
+          margin-bottom: 2rem;
+        }
+      }
+
+      &-subtitle {
+        @include lato-400;
+        font-size: 2rem;
+        color: $text-secondary;
+        margin-bottom: 3rem;
+
+        @media (max-width: 1440px) {
+          font-size: 1.8rem;
+          margin-bottom: 2.5rem;
+        }
+
+        @media (max-width: 1000px) {
+          font-size: 1.6rem;
+          margin-bottom: 2rem;
+        }
+
+        @media (max-width: 580px) {
+          font-size: 1.3rem;
+          margin-bottom: 1.5rem;
+        }
+      }
+
+      &-btn {
+        @include lato-400;
+        font-size: 2rem;
+        color: $text-white;
+        background-color: $button-color;
+        width: 21rem;
+        height: 6rem;
+        border-radius: 1rem;
+        outline: none;
+        border: 1px solid $button-color;
+
+        &:hover {
+          box-shadow: 0 0 4px 4px $button-color;
+        }
+
+        &:active {
+          box-shadow: 0 0 7px 7px $button-color;
+        }
+      }
+    }
+  }
+}

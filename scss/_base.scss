@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Lato/lato-v17-latin-regular.eot");
+  src: local("Lato Regular"), local("Lato-Regular"),
+    url("../fonts/Lato/lato-v17-latin-regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Lato/lato-v17-latin-regular.woff2") format("woff2"),
+    url("../fonts/Lato/lato-v17-latin-regular.woff") format("woff"),
+    url("../fonts/Lato/lato-v17-latin-regular.ttf") format("truetype"),
+    url("../fonts/Lato/lato-v17-latin-regular.svg#Lato") format("svg");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Lato/lato-v17-latin-700.eot");
+  src: local("Lato Bold"), local("Lato-Bold"),
+    url("../fonts/Lato/lato-v17-latin-700.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Lato/lato-v17-latin-700.woff2") format("woff2"),
+    url("../fonts/Lato/lato-v17-latin-700.woff") format("woff"),
+    url("../fonts/Lato/lato-v17-latin-700.ttf") format("truetype"),
+    url("../fonts/Lato/lato-v17-latin-700.svg#Lato") format("svg");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/Lato/lato-v17-latin-900.eot");
+  src: local("Lato Black"), local("Lato-Black"),
+    url("../fonts/Lato/lato-v17-latin-900.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Lato/lato-v17-latin-900.woff2") format("woff2"),
+    url("../fonts/Lato/lato-v17-latin-900.woff") format("woff"),
+    url("../fonts/Lato/lato-v17-latin-900.ttf") format("truetype"),
+    url("../fonts/Lato/lato-v17-latin-900.svg#Lato") format("svg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 192rem;
+  width: 100%;
+  margin: auto;
+}
